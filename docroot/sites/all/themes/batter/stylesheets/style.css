@@ -1,0 +1,100 @@
+/* line 1, ../sass/partials/components/_general.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/partials/components/_general.scss */
+body {
+  font-family: 'Muli', Helvetica, Verdana, Arial, Sans-Serif;
+  font-weight: 300;
+  background: #702f31;
+}
+
+/* line 11, ../sass/partials/components/_general.scss */
+h1, h2, h3, h4, h5, h6, a {
+  color: #702f31;
+  font-weight: normal;
+}
+
+/* line 17, ../sass/partials/components/_general.scss */
+#page {
+  background: #fff;
+  width: 96%;
+  margin: 0 auto 1em auto;
+  padding: 2em 1em 1em 1em;
+}
+
+/* line 23, ../sass/partials/components/_general.scss */
+#logo {
+  width: 90px;
+  float: left;
+}
+
+/* line 28, ../sass/partials/components/_general.scss */
+#name-and-slogan {
+  border-bottom: 2px solid #83736b;
+}
+
+/* line 31, ../sass/partials/components/_general.scss */
+#site-name {
+  padding-top: 2em;
+  font-size: 1.5em;
+}
+/* line 35, ../sass/partials/components/_general.scss */
+#site-name a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified {
+  position: absolute;
+  top: 4.5em;
+  right: 1.5em;
+}
+/* line 6, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified span.toggler {
+  width: 1.5em;
+  background: #fff;
+  float: right;
+  box-shadow: none;
+  border-radius: 0;
+  color: #000;
+  text-align: center;
+}
+/* line 17, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom: none;
+}
+/* line 21, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled.absolute {
+  position: absolute;
+}
+/* line 24, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  top: 0;
+  width: 75%;
+  margin-top: 2em;
+  right: 0;
+  box-shadow: -2px 2px 10px #000;
+  background: #83736b;
+  border-radius: 0.5em;
+}
+/* line 33, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li {
+  text-align: center;
+}
+/* line 36, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li a:hover {
+  background-color: #908077;
+}
+/* line 39, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li:last-of-type a {
+  border-bottom: none;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+/* line 44, ../sass/partials/components/_menu.scss */
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li:first-of-type a {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}

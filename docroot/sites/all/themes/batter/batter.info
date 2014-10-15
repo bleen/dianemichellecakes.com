@@ -1,0 +1,19 @@
+name = Batter
+description = A custom responsive theme.
+package = Core
+version = VERSION
+core = 7.x
+
+; Stylesheets
+stylesheets[screen][] = stylesheets/style.css
+
+; Settings
+
+; Regions
+regions[content] = Content
+regions[help] = Help
+regions[tabs] = Tabs
+regions[messages] = Messages
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+

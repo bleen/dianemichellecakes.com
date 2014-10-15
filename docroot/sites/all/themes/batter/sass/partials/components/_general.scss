@@ -1,0 +1,38 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', Helvetica, Verdana, Arial, Sans-Serif;
+  font-weight: 300;
+  background: $color_red;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  color: $color_red;
+  font-weight: normal;
+}
+
+
+#page {
+  background: #fff;
+  width: 96%;
+  margin: 0 auto 1em auto;
+  padding: 2em 1em 1em 1em;
+}
+#logo {
+  width: 90px;
+  float: left;
+}
+
+#name-and-slogan {
+  border-bottom: 2px solid $color_red_soft;
+}
+#site-name {
+  padding-top: 2em;
+  font-size: 1.5em;
+
+  a {
+    text-decoration: none;
+  }
+}
