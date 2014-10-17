@@ -1,0 +1,4 @@
+name = Diane Michelle Cakes
+description = "Custom functionality for dianemichellecakes.com"
+package = Other
+core = 7.x

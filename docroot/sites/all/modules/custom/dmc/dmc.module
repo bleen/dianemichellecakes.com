@@ -1,0 +1,45 @@
+<?php
+
+/**
+ *  Implements hook_form_FORM_ID_alter().
+ */
+function dmc_form_contact_site_form_alter(&$form, &$form_id) {
+  $defaults = array(
+    'value' => '',
+    'format' => filter_default_format(),
+  );
+  $markup = variable_get('contact_instructions', $defaults);
+
+  $form['instructions'] = array(
+    '#markup' => check_markup($markup['value'], $markup['format']),
+    '#weight' => -100,
+  );
+}
+
+/**
+ *  Implements hook_form_FORM_ID_alter().
+ */
+function dmc_form_contact_category_edit_form_alter(&$form, &$form_state) {
+  $defaults = array(
+    'value' => '',
+    'format' => filter_default_format(),
+  );
+  $instructions = variable_get('contact_instructions', $defaults);
+
+  $form['instructions'] = array(
+    '#type' => 'text_format',
+    '#format' => $instructions['format'],
+    '#title' => t('Instructions'),
+    '#weight' => -10,
+    '#default_value' => $instructions['value'],
+    '#description' => t('Enter a message to be displayed with the contact form'),
+  );
+  $form['#submit'][] = 'dmc_contact_category_edit_form_submit';
+}
+
+/**
+ * Form submit function.
+ */
+function dmc_contact_category_edit_form_submit($form, $form_state) {
+  variable_set('contact_instructions', $form_state['values']['instructions']);
+}
