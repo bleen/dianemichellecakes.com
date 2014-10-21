@@ -1,0 +1,17 @@
+label {
+  font-size: 1.25em;
+  color: $color_red;
+  margin-bottom: .3em;
+}
+input {
+  padding: .5em;
+  font-size: 1.5em;
+  font-weight: normal;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+#edit-submit {
+  cursor: pointer;
+}

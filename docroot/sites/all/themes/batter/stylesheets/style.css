@@ -166,6 +166,28 @@ h1, h2, h3, h4, h5, h6, a {
   border-top-right-radius: 0.5em;
 }
 
+/* line 1, ../sass/partials/components/_forms.scss */
+label {
+  font-size: 1.25em;
+  color: #702f31;
+  margin-bottom: .3em;
+}
+
+/* line 6, ../sass/partials/components/_forms.scss */
+input {
+  padding: .5em;
+  font-size: 1.5em;
+  font-weight: normal;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+/* line 15, ../sass/partials/components/_forms.scss */
+#edit-submit {
+  cursor: pointer;
+}
+
 /* line 1, ../sass/partials/components/_content.scss */
 .region-content {
   font-size: .9em;
@@ -190,30 +212,50 @@ h1, h2, h3, h4, h5, h6, a {
   line-height: 1.25em;
 }
 
-/* line 24, ../sass/partials/components/_content.scss */
+/* line 23, ../sass/partials/components/_content.scss */
+.page-node-1 .region-content {
+  text-align: center;
+  font-size: 0;
+}
+
+/* line 33, ../sass/partials/components/_content.scss */
 .page-node-2 .region-content img {
   display: block;
   float: left;
   margin: 0 1em 1em 0;
 }
 
-/* line 34, ../sass/partials/components/_content.scss */
+/* line 43, ../sass/partials/components/_content.scss */
 .page-node-3 .region-content {
   margin-top: 1em;
 }
+/* line 46, ../sass/partials/components/_content.scss */
+.page-node-3 ul {
+  list-style: disc;
+  margin-left: 1.5em;
+}
+/* line 50, ../sass/partials/components/_content.scss */
+.page-node-3 li {
+  margin-bottom: 0.5em;
+}
 
-/* line 42, ../sass/partials/components/_content.scss */
+/* line 58, ../sass/partials/components/_content.scss */
 .page-node-4 .region-content h4 {
   margin-left: .5em;
 }
-/* line 45, ../sass/partials/components/_content.scss */
+/* line 61, ../sass/partials/components/_content.scss */
 .page-node-4 .region-content ul {
   margin-bottom: 1em;
   color: #666666;
 }
-/* line 49, ../sass/partials/components/_content.scss */
+/* line 65, ../sass/partials/components/_content.scss */
 .page-node-4 .region-content li {
   margin-bottom: .5em;
   padding-left: 2em;
   text-indent: -1em;
+}
+
+/* line 75, ../sass/partials/components/_content.scss */
+.page-contact form p {
+  font-size: 1.5em;
 }
