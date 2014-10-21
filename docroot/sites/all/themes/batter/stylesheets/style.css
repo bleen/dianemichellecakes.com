@@ -1,3 +1,68 @@
+/* line 17, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 /* line 1, ../sass/partials/components/_general.scss */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -58,18 +123,20 @@ h1, h2, h3, h4, h5, h6, a {
   float: right;
   box-shadow: none;
   border-radius: 0;
-  color: #000;
+  color: #702f31;
   text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
 }
-/* line 17, ../sass/partials/components/_menu.scss */
+/* line 19, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled span.toggler {
   border-bottom: none;
 }
-/* line 21, ../sass/partials/components/_menu.scss */
+/* line 23, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute {
   position: absolute;
 }
-/* line 24, ../sass/partials/components/_menu.scss */
+/* line 26, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
   top: 0;
   width: 75%;
@@ -79,22 +146,74 @@ h1, h2, h3, h4, h5, h6, a {
   background: #83736b;
   border-radius: 0.5em;
 }
-/* line 33, ../sass/partials/components/_menu.scss */
+/* line 35, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li {
   text-align: center;
 }
-/* line 36, ../sass/partials/components/_menu.scss */
+/* line 38, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li a:hover {
   background-color: #908077;
 }
-/* line 39, ../sass/partials/components/_menu.scss */
+/* line 41, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li:last-of-type a {
   border-bottom: none;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
-/* line 44, ../sass/partials/components/_menu.scss */
+/* line 46, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li:first-of-type a {
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
+}
+
+/* line 1, ../sass/partials/components/_content.scss */
+.region-content {
+  font-size: .9em;
+}
+/* line 4, ../sass/partials/components/_content.scss */
+.region-content h1, .region-content h2, .region-content h3, .region-content h4, .region-content h5, .region-content h6 {
+  text-transform: lowercase;
+  font-weight: bold;
+  margin-bottom: .3em;
+}
+/* line 9, ../sass/partials/components/_content.scss */
+.region-content h2 {
+  font-size: 1.5em;
+}
+/* line 12, ../sass/partials/components/_content.scss */
+.region-content h3 {
+  font-size: 1.25em;
+}
+/* line 15, ../sass/partials/components/_content.scss */
+.region-content p {
+  margin: 0 0 1em 0;
+  line-height: 1.25em;
+}
+
+/* line 24, ../sass/partials/components/_content.scss */
+.page-node-2 .region-content img {
+  display: block;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* line 34, ../sass/partials/components/_content.scss */
+.page-node-3 .region-content {
+  margin-top: 1em;
+}
+
+/* line 42, ../sass/partials/components/_content.scss */
+.page-node-4 .region-content h4 {
+  margin-left: .5em;
+}
+/* line 45, ../sass/partials/components/_content.scss */
+.page-node-4 .region-content ul {
+  margin-bottom: 1em;
+  color: #666666;
+}
+/* line 49, ../sass/partials/components/_content.scss */
+.page-node-4 .region-content li {
+  margin-bottom: .5em;
+  padding-left: 2em;
+  text-indent: -1em;
 }

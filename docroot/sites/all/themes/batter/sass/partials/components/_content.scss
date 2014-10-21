@@ -1,0 +1,55 @@
+.region-content {
+  font-size: .9em;
+
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-bottom: .3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  p {
+    margin: 0 0 1em 0;
+    line-height: 1.25em;
+  }
+}
+
+// Special handling for the "Designer" page
+.page-node-2 {
+  .region-content {
+    img {
+      display: block;
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+  }
+}
+
+// Special handling for the "Process" page
+.page-node-3 {
+  .region-content {
+    margin-top: 1em;
+  }
+}
+
+// Special handling for the "Flavors" page
+.page-node-4 {
+  .region-content {
+    h4 {
+      margin-left: .5em;
+    }
+    ul {
+      margin-bottom: 1em;
+      color: #666666;
+    }
+    li {
+      margin-bottom: .5em;
+      padding-left: 2em;
+      text-indent: -1em;
+    }
+  }
+}

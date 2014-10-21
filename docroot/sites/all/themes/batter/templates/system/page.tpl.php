@@ -92,10 +92,8 @@
       <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
 
     </header>
-    
-    <!-- #content-prefix -->
 
-    <?php print $breadcrumb; ?>
+    <!-- #content-prefix -->
 
     <?php if ($messages): ?>
       <div id="messages" role="alertdialog"><?php print $messages; ?></div>
