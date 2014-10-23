@@ -293,3 +293,41 @@ input {
   text-decoration: none;
   background: rgba(255, 255, 255, 0.75);
 }
+
+/* line 42, ../sass/partials/components/_galleries.scss */
+.field-slideshow-wrapper {
+  position: relative;
+  width: 100%;
+}
+/* line 46, ../sass/partials/components/_galleries.scss */
+.field-slideshow-wrapper .field-slideshow {
+  background: #ccc;
+}
+/* line 50, ../sass/partials/components/_galleries.scss */
+.field-slideshow-wrapper .field-slideshow-controls {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background: #702f31;
+  overflow: hidden;
+  zoom: 1;
+}
+/* line 58, ../sass/partials/components/_galleries.scss */
+.field-slideshow-wrapper .field-slideshow-controls a {
+  display: inline-block;
+  padding: .5em;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+/* line 66, ../sass/partials/components/_galleries.scss */
+.field-slideshow-wrapper .field-slideshow-controls a.prev {
+  float: left;
+  text-align: left;
+}
+/* line 70, ../sass/partials/components/_galleries.scss */
+.field-slideshow-wrapper .field-slideshow-controls a.next {
+  float: right;
+  text-align: right;
+}
