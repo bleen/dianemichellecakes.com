@@ -14,10 +14,11 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 #page {
+  position: relative;
   background: #fff;
   width: 96%;
   margin: 0 auto 1em auto;
-  padding: 2em 1em 1em 1em;
+  padding: 2em 1em;
 }
 #logo {
   width: 90px;
@@ -34,4 +35,12 @@ h1, h2, h3, h4, h5, h6, a {
   a {
     text-decoration: none;
   }
+}
+
+#copyright {
+  color: $color_red;
+  font-size: .65em;
+  position: absolute;
+  bottom: .25em;
+  right: .25em;
 }

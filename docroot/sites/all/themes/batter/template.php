@@ -55,6 +55,14 @@ function batter_preprocess_page(&$variables) {
       ),
     ),
   );
+
+  $variables['copyright'] = array(
+    '#markup' => '&copy; ' . date('Y') . '. diane michell cakes',
+    '#theme_wrappers' => array('container'),
+    '#attributes' => array(
+      'id' => 'copyright',
+    ),
+  );
 }
 
 /**

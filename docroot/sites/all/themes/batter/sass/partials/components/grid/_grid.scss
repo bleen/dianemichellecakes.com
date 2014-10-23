@@ -1,0 +1,9 @@
+$grids: 6;
+$gutters: 1/4;
+$output: 'isolation';
+
+body {
+  &.environment-local {
+    /* @include background-grid();*/
+  }
+}

@@ -1,3 +1,9 @@
+.responsive-menus {
+  @include breakpoint($breakpoint_menu) {
+    @include float-span(1, 'first');
+  }
+}
+
 .responsive-menus.responsified {
   position: absolute;
   top: 4.5em;

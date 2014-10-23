@@ -1,4 +1,3 @@
-/* line 17, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,103 +19,126 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 1, ../sass/partials/components/_general.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+body.environment-local {
+  /* @include background-grid();*/
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* line 5, ../sass/partials/components/_general.scss */
 body {
   font-family: 'Muli', Helvetica, Verdana, Arial, Sans-Serif;
   font-weight: 300;
   background: #702f31;
 }
 
-/* line 11, ../sass/partials/components/_general.scss */
 h1, h2, h3, h4, h5, h6, a {
   color: #702f31;
   font-weight: normal;
 }
 
-/* line 16, ../sass/partials/components/_general.scss */
 #page {
+  position: relative;
   background: #fff;
   width: 96%;
   margin: 0 auto 1em auto;
-  padding: 2em 1em 1em 1em;
+  padding: 2em 1em;
 }
 
-/* line 22, ../sass/partials/components/_general.scss */
 #logo {
   width: 90px;
   float: left;
 }
 
-/* line 27, ../sass/partials/components/_general.scss */
 #name-and-slogan {
   border-bottom: 2px solid #83736b;
 }
 
-/* line 30, ../sass/partials/components/_general.scss */
 #site-name {
   padding-top: 2em;
   font-size: 1.5em;
 }
-/* line 34, ../sass/partials/components/_general.scss */
 #site-name a {
   text-decoration: none;
 }
 
-/* line 1, ../sass/partials/components/_menu.scss */
+#copyright {
+  color: #702f31;
+  font-size: .65em;
+  position: absolute;
+  bottom: .25em;
+  right: .25em;
+}
+
+@media (min-width: 769px) {
+  .responsive-menus {
+    width: 13.7931%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.44828%;
+    clear: both;
+  }
+}
+
 .responsive-menus.responsified {
   position: absolute;
   top: 4.5em;
   right: 1.5em;
 }
-/* line 6, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified span.toggler {
   width: 1.5em;
   background: #fff;
@@ -128,15 +150,12 @@ h1, h2, h3, h4, h5, h6, a {
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 19, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled span.toggler {
   border-bottom: none;
 }
-/* line 23, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute {
   position: absolute;
 }
-/* line 26, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
   top: 0;
   width: 75%;
@@ -146,34 +165,28 @@ h1, h2, h3, h4, h5, h6, a {
   background: #83736b;
   border-radius: 0.5em;
 }
-/* line 35, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li {
   text-align: center;
 }
-/* line 38, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li a:hover {
   background-color: #908077;
 }
-/* line 41, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li:last-of-type a {
   border-bottom: none;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
-/* line 46, ../sass/partials/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple li:first-of-type a {
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
 }
 
-/* line 1, ../sass/partials/components/_forms.scss */
 label {
   font-size: 1.25em;
   color: #702f31;
   margin-bottom: .3em;
 }
 
-/* line 6, ../sass/partials/components/_forms.scss */
 input {
   padding: .5em;
   font-size: 1.5em;
@@ -183,84 +196,84 @@ input {
   max-width: 100%;
 }
 
-/* line 15, ../sass/partials/components/_forms.scss */
 #edit-submit {
   cursor: pointer;
 }
 
-/* line 1, ../sass/partials/components/_content.scss */
+@media (min-width: 769px) {
+  #content {
+    width: 82.75862%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
 .region-content {
   font-size: .9em;
 }
-/* line 4, ../sass/partials/components/_content.scss */
 .region-content h1, .region-content h2, .region-content h3, .region-content h4, .region-content h5, .region-content h6 {
   text-transform: lowercase;
   font-weight: bold;
   margin-bottom: .3em;
 }
-/* line 9, ../sass/partials/components/_content.scss */
 .region-content h2 {
   font-size: 1.5em;
 }
-/* line 12, ../sass/partials/components/_content.scss */
 .region-content h3 {
   font-size: 1.25em;
 }
-/* line 15, ../sass/partials/components/_content.scss */
 .region-content p {
   margin: 0 0 1em 0;
   line-height: 1.25em;
 }
 
-/* line 23, ../sass/partials/components/_content.scss */
 .page-node-1 .region-content {
   text-align: center;
   font-size: 0;
 }
+@media (min-width: 500px) {
+  .page-node-1 .borealis-wrapper {
+    width: 50%;
+    float: left;
+    font-size: 0;
+  }
+}
 
-/* line 33, ../sass/partials/components/_content.scss */
 .page-node-2 .region-content img {
   display: block;
   float: left;
   margin: 0 1em 1em 0;
 }
 
-/* line 43, ../sass/partials/components/_content.scss */
 .page-node-3 .region-content {
   margin-top: 1em;
 }
-/* line 46, ../sass/partials/components/_content.scss */
 .page-node-3 ul {
   list-style: disc;
   margin-left: 1.5em;
 }
-/* line 50, ../sass/partials/components/_content.scss */
 .page-node-3 li {
   margin-bottom: 0.5em;
 }
 
-/* line 58, ../sass/partials/components/_content.scss */
 .page-node-4 .region-content h4 {
   margin-left: .5em;
 }
-/* line 61, ../sass/partials/components/_content.scss */
 .page-node-4 .region-content ul {
   margin-bottom: 1em;
   color: #666666;
 }
-/* line 65, ../sass/partials/components/_content.scss */
 .page-node-4 .region-content li {
   margin-bottom: .5em;
   padding-left: 2em;
   text-indent: -1em;
 }
 
-/* line 75, ../sass/partials/components/_content.scss */
 .page-contact form p {
   font-size: 1.5em;
 }
 
-/* line 4, ../sass/partials/components/_galleries.scss */
 .view-photo-galleries.view-display-id-landing_page .gallery {
   position: relative;
   width: 50%;
@@ -268,19 +281,15 @@ input {
   background: #000000;
   white-space: nowrap;
 }
-/* line 11, ../sass/partials/components/_galleries.scss */
 .view-photo-galleries.view-display-id-landing_page .gallery img {
   display: block;
 }
-/* line 15, ../sass/partials/components/_galleries.scss */
 .view-photo-galleries.view-display-id-landing_page .gallery .views-field-title a {
   display: none;
 }
-/* line 20, ../sass/partials/components/_galleries.scss */
 .view-photo-galleries.view-display-id-landing_page .gallery:hover img {
   opacity: 0.5;
 }
-/* line 24, ../sass/partials/components/_galleries.scss */
 .view-photo-galleries.view-display-id-landing_page .gallery:hover .views-field-title a {
   display: block;
   width: 100%;
@@ -294,16 +303,13 @@ input {
   background: rgba(255, 255, 255, 0.75);
 }
 
-/* line 42, ../sass/partials/components/_galleries.scss */
 .field-slideshow-wrapper {
   position: relative;
   width: 100%;
 }
-/* line 46, ../sass/partials/components/_galleries.scss */
 .field-slideshow-wrapper .field-slideshow {
   background: #ccc;
 }
-/* line 50, ../sass/partials/components/_galleries.scss */
 .field-slideshow-wrapper .field-slideshow-controls {
   position: relative;
   z-index: 100;
@@ -312,7 +318,6 @@ input {
   overflow: hidden;
   zoom: 1;
 }
-/* line 58, ../sass/partials/components/_galleries.scss */
 .field-slideshow-wrapper .field-slideshow-controls a {
   display: inline-block;
   padding: .5em;
@@ -321,12 +326,10 @@ input {
   font-size: 1.2em;
   text-decoration: none;
 }
-/* line 66, ../sass/partials/components/_galleries.scss */
 .field-slideshow-wrapper .field-slideshow-controls a.prev {
   float: left;
   text-align: left;
 }
-/* line 70, ../sass/partials/components/_galleries.scss */
 .field-slideshow-wrapper .field-slideshow-controls a.next {
   float: right;
   text-align: right;

@@ -115,4 +115,5 @@
       <?php print render($page['footer']); ?>
     </footer>
 
+    <?php print render($copyright); ?>
   </div><!-- #page -->
