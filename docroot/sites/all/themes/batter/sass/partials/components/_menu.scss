@@ -6,8 +6,8 @@
 
 .responsive-menus.responsified {
   position: absolute;
-  top: 4.5em;
-  right: 1.5em;
+  top: 2.5em;
+  right: .5em;
 
   span.toggler {
     width: 1.5em;
@@ -58,3 +58,27 @@
     }
   }
 }
+
+#main-menu {
+  margin-top: -7em;
+  padding-top: 10em;
+
+  a {
+    color: $color_red_bright;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1em;
+
+    &.active,
+    &:hover {
+      color: $color_red_soft;
+    }
+  }
+
+  @include breakpoint($breakpoint_menu_wide) {
+    padding-bottom: 10em;
+    margin-left: 2em;
+    border-left: 1px solid $color_red_soft;
+  }
+}
+

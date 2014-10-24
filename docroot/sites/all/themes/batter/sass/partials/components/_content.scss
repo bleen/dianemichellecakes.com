@@ -1,4 +1,15 @@
 #content {
+  a {
+    text-decoration: underline;
+  }
+
+  .column-break-before {
+    @include break-before(always);
+  }
+  .column-break-after {
+    @include break-before(always);
+  }
+
   @include breakpoint($breakpoint_menu) {
     @include float-span(5, 'last');
   }
@@ -32,6 +43,10 @@
   }
 
   @include breakpoint(500px) {
+    .content {
+      max-width: 75%;
+      margin: 0 auto;
+    }
     .borealis-wrapper {
       width: 50%;
       float: left;
@@ -45,9 +60,19 @@
 .page-node-2 {
   .region-content {
     img {
+      width: 100%;
       display: block;
-      float: left;
       margin: 0 1em 1em 0;
+    }
+
+    @include breakpoint(500px) {
+      @include column-count(2);
+    }
+    @include breakpoint($breakpoint_menu) {
+      img {
+        @include break-after(always);
+      }
+      @include column-count(3);
     }
   }
 }
@@ -56,13 +81,22 @@
 .page-node-3 {
   .region-content {
     margin-top: 1em;
-  }
-  ul {
-    list-style: disc;
-    margin-left: 1.5em;
-  }
-  li {
-    margin-bottom: 0.5em;
+
+    ul {
+      list-style: disc;
+      margin-left: 1.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    @include breakpoint($breakpoint_menu) {
+      @include column-count(2);
+
+      h2:first-of-type {
+        @include column-span(all);
+      }
+    }
   }
 }
 
@@ -80,6 +114,14 @@
       margin-bottom: .5em;
       padding-left: 2em;
       text-indent: -1em;
+    }
+
+    @include breakpoint($breakpoint_menu) {
+      @include column-count(2);
+
+      p:first-of-type {
+        @include column-span(all);
+      }
     }
   }
 }

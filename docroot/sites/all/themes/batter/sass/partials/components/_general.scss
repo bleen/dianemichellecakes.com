@@ -9,8 +9,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-  color: $color_red;
+  color: $color_red_bright;
   font-weight: normal;
+}
+
+a {
+  text-decoration: none;
 }
 
 #page {
@@ -19,21 +23,35 @@ h1, h2, h3, h4, h5, h6, a {
   width: 96%;
   margin: 0 auto 1em auto;
   padding: 2em 1em;
+  max-width: 1200px;
 }
 #logo {
   width: 90px;
   float: left;
 }
 
+#header {
+  @include breakpoint($breakpoint_menu_wide) {
+    padding-left: 4em;
+  }
+}
+
 #name-and-slogan {
-  border-bottom: 2px solid $color_red_soft;
+  border-bottom: 1px solid $color_red_soft;
+
+  @include breakpoint($breakpoint_menu_wide) {
+    margin-left: -4em;
+  }
 }
 #site-name {
   padding-top: 2em;
   font-size: 1.5em;
+  text-transform: lowercase;
+  font-weight: bold;
 
-  a {
-    text-decoration: none;
+  @include breakpoint($breakpoint_menu) {
+    padding-top: 1em;
+    font-size: 2em;
   }
 }
 
