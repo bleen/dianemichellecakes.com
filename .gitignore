@@ -1,5 +1,6 @@
 # Annoyingly, dreamhost forces a favicon upon you.
 /favicon.*
+/docroot/favicon.*
 
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
