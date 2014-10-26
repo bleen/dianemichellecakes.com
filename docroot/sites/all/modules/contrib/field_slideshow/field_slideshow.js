@@ -116,6 +116,16 @@
               var carousel = $("#" + options.index + "-carousel").data("jcarousel");
               carousel.scroll(nextIndex, true);
             }
+
+            // Trigger a custom event when the slide changes so other modules
+            // can react by implementing:
+            // jQuery(document).bind('beforeTransition.fieldSlideshow', ...);
+            var beforeEvent = $.Event("beforeTransition.fieldSlideshow");
+            beforeEvent.currSlideElement = currSlideElement;
+            beforeEvent.nextSlideElement = nextSlideElement;
+            beforeEvent.options = options;
+            beforeEvent.forwardFlag = forwardFlag;
+            $(document).trigger(beforeEvent);
           }
 
           if (num_slides > 1) {
