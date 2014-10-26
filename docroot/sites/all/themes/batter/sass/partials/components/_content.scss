@@ -133,11 +133,14 @@
 
 .page-gallery {
   .region-content {
-    max-width: 66%;
+    max-width: 90%;
     margin: 0 auto;
 
     a {
       text-decoration: none;
+    }
+    @include breakpoint($breakpoint_menu) {
+      max-width: 66%;
     }
   }
 }

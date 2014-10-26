@@ -377,11 +377,16 @@ input, textarea {
 }
 
 .page-gallery .region-content {
-  max-width: 66%;
+  max-width: 90%;
   margin: 0 auto;
 }
 .page-gallery .region-content a {
   text-decoration: none;
+}
+@media (min-width: 769px) {
+  .page-gallery .region-content {
+    max-width: 66%;
+  }
 }
 
 .node-type-photo-gallery .field-slideshow-slide {
@@ -440,7 +445,7 @@ input, textarea {
   color: #ffffff;
   font-size: 1.5em;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 100;
   max-width: 50px;
   max-height: 1.5em;
   margin: auto;
