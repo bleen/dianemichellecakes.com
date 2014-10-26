@@ -19,13 +19,18 @@
 
       // Set the heights properly.
       $('.field-slideshow-slide').css('overflow', 'hidden');
-      $('.field-slideshow').css('overflow', 'hidden').css('height', $('.field-slideshow-slide-1 img').height());
-
+      $('.field-slideshow').css('overflow', 'hidden');
       jQuery(document).bind('beforeTransition.fieldSlideshow', function (e) {
         // Make sure the next slide is visible.
         $(e.nextSlideElement).css('display', 'block').css('opacity', '.0000001');
-        var h = $(e.nextSlideElement).find('img').height() + 'px';
-        $('.field-slideshow').animate({ height:h }, {queue:false, duration:500});
+        $('.field-slideshow').animate(
+          {
+            height:$(e.nextSlideElement).find('img').height() + 'px'
+          },
+          {
+            queue:false,
+            duration:500
+          });
       });
 
 
