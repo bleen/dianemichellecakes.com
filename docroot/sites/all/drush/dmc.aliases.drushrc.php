@@ -3,6 +3,7 @@
 /* ==========================  L O C A L  ========================= */
 $aliases['local'] = array(
   'env' => 'local',
+  'root' => '/Users/bleen/Sites/dianemichellecakes.com/docroot',
   '%dump-dir' => '/tmp/php',
 );
 
