@@ -430,6 +430,41 @@ input, textarea {
   position: relative;
   width: 100%;
 }
+.field-slideshow-wrapper .field-slideshow-pager-toggle {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1000;
+  max-width: 50px;
+  max-height: 1.5em;
+  margin: auto;
+}
+.field-slideshow-wrapper .field-slideshow-pager {
+  display: none;
+  font-size: 0;
+}
+.field-slideshow-wrapper .field-slideshow-pager li {
+  margin: 0;
+  display: inline-block;
+  width: 20%;
+}
+@media (min-width: 769px) {
+  .field-slideshow-wrapper .field-slideshow-pager li {
+    width: 10%;
+  }
+}
+.field-slideshow-wrapper .field-slideshow-pager img {
+  width: 100%;
+}
+.field-slideshow-wrapper .field-slideshow-pager:before {
+  content: '+';
+}
 .field-slideshow-wrapper .field-slideshow {
   background: #ccc;
 }
