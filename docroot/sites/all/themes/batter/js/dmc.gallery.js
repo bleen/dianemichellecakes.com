@@ -16,6 +16,10 @@
       $('.field-slideshow-pager-toggle').click(function(context) {
         $('.field-slideshow-pager').toggle("fast");
       });
+      $('.field-slideshow-pager li').click(function(context) {
+        $('.field-slideshow-pager').hide("fast");
+      });
+
 
       // Set the heights properly.
       $('.field-slideshow-slide').css('overflow', 'hidden');
